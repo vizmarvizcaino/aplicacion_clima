@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiKariWXJP-LCKdPF86WnHfcACzwFxuQI&libraries=places"></script>
+  <script src="main.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
+  <title>Aplicacion Clima</title>
+</head>
+
+<body>
+  <main>
+    <div class="search-form">
+      <form id="search-form">
+        <h2>Aplicacion del clima de todas las ciudades del mundo</h2>
+        <div class="searchbox">
+          <input id="searchbox" type="text" size="50" placeholder="🔎 Ingrese una ubicacion" autocomplete="on"
+            runat="server" />
+          <input type="hidden" id="city2" name="city2" />
+          <input type="hidden" id="cityLat" name="cityLat" />
+          <input type="hidden" id="cityLng" name="cityLng" />
+        </div>
+      </form>
+    </div>
+    <div class="container-weather-card">
+      <div class="weather-card" id="card">
+        <div class="info">
+          <p>Este es el clima en:</p>
+        </div>
+        <div class="city" id="city"></div>
+        <div class="date" id="date"></div>
+        <div class="temperature">
+          <img src="images/temp-mid.png" class="temp-img" id="temp-img" />
+          <div class="temp" id="temp"></div>
+          <img src="images/iconspeed.png" class="velocity-img" id="velocity-img" />
+          <div class="velocity" id="velocity"></div>
+        </div>
+        <div class="weather" id="weather"></div>
+        <div class="range" id="range"></div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>Creado por Vizmar Vizcaino</p>
+    <p>Todos los derechos reservados &copy;</p>
+  </footer>
+</body>
+
+</html>
